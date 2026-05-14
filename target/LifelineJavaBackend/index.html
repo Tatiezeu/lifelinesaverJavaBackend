@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lifeline Backend API</title>
+    <style>
+        body { font-family: sans-serif; padding: 50px; line-height: 1.6; }
+        .container { max-width: 800px; margin: auto; background: #f4f4f4; padding: 20px; border-radius: 8px; }
+        h1 { color: #2c3e50; }
+        code { background: #eee; padding: 2px 5px; border-radius: 4px; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin-bottom: 10px; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lifeline Backend is Running</h1>
+        <p>The backend API is successfully deployed and connected to the database.</p>
+        
+        <h3>API Base Path:</h3>
+        <p><code>http://localhost:8080/LifelineJavaBackend/api/</code></p>
+
+        <h3>Quick Links:</h3>
+        <ul>
+            <li><a href="api/health">Health Check</a> (JPA & CDI Status)</li>
+            <li><a href="api/users">Users API</a></li>
+            <li><a href="api/alerts">Alerts API</a></li>
+        </ul>
+
+        <h3>Important Note:</h3>
+        <p>Port <b>8080</b> is for the application. Port <b>4848</b> is for the GlassFish Admin Console only.</p>
+    </div>
+</body>
+</html>

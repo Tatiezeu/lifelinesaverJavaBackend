@@ -1,0 +1,10 @@
+com/lifeline/resource/UserResource.class
+com/lifeline/config/RestConfig.class
+com/lifeline/resource/HealthResource.class
+com/lifeline/resource/AlertResource.class
+com/lifeline/entity/User.class
+com/lifeline/config/CorsFilter.class
+com/lifeline/service/UserService.class
+com/lifeline/service/AlertService.class
+com/lifeline/resource/AuthResource.class
+com/lifeline/entity/EmergencyAlert.class

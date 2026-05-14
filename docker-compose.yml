@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  glassfish:
+    image: omnifish/glassfish:7.0.5
+    container_name: glassfish
+    ports:
+      - "8080:8080"   # HTTP
+      - "4848:4848"   # Admin Console
+    environment:
+      AS_ADMIN_PASSWORD: admin123
+      AS_USER: admin
+    volumes:
+      - ./autodeploy:/opt/glassfish7/glassfish/domains/domain1/autodeploy
