@@ -89,6 +89,9 @@ public class AuthResource {
     @GET
     @Path("/profile")
     public Response getProfile(@HeaderParam("Authorization") String authHeader) {
+        LOGGER.log(Level.INFO, "Profile fetch attempt with header: {0}", 
+                (authHeader != null ? "present" : "null"));
+
         if (authHeader == null || !authHeader.startsWith("Bearer ")) {
             return error(Response.Status.UNAUTHORIZED, "Missing or invalid Authorization header");
         }
@@ -96,13 +99,17 @@ public class AuthResource {
         String token = authHeader.substring("Bearer ".length()).trim();
 
         if (!token.startsWith(TOKEN_PREFIX)) {
+            LOGGER.log(Level.WARNING, "Invalid token prefix: {0}", token);
             return error(Response.Status.UNAUTHORIZED, "Invalid token format");
         }
 
         String email = token.substring(TOKEN_PREFIX.length());
+        LOGGER.log(Level.INFO, "Fetching profile for email: {0}", email);
+        
         User user = userService.findByEmail(email);
 
         if (user == null) {
+            LOGGER.log(Level.WARNING, "User not found for email: {0}", email);
             return error(Response.Status.NOT_FOUND, "User not found for this token");
         }
 
@@ -113,6 +120,7 @@ public class AuthResource {
         profile.put("is_suspended", user.isSuspended());
         profile.put("is_active",    user.isActive());
         profile.put("profile_picture", user.getProfilePicture());
+        
         return Response.ok(profile).build();
     }
 

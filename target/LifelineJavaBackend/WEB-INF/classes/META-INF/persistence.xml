@@ -8,6 +8,7 @@
         <jta-data-source>jdbc/LifelinePool</jta-data-source>
         <class>com.lifeline.entity.User</class>
         <class>com.lifeline.entity.EmergencyAlert</class>
+        <class>com.lifeline.entity.ClientProfile</class>
         <properties>
             <property name="jakarta.persistence.schema-generation.database.action" value="none"/>
             <property name="eclipselink.target-database" value="Oracle"/>

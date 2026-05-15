@@ -1,10 +1,13 @@
 /Users/macbookpro/Applications1/LifelineJavaBackend/src/main/java/com/lifeline/config/CorsFilter.java
 /Users/macbookpro/Applications1/LifelineJavaBackend/src/main/java/com/lifeline/config/RestConfig.java
+/Users/macbookpro/Applications1/LifelineJavaBackend/src/main/java/com/lifeline/entity/ClientProfile.java
 /Users/macbookpro/Applications1/LifelineJavaBackend/src/main/java/com/lifeline/entity/EmergencyAlert.java
 /Users/macbookpro/Applications1/LifelineJavaBackend/src/main/java/com/lifeline/entity/User.java
 /Users/macbookpro/Applications1/LifelineJavaBackend/src/main/java/com/lifeline/resource/AlertResource.java
 /Users/macbookpro/Applications1/LifelineJavaBackend/src/main/java/com/lifeline/resource/AuthResource.java
+/Users/macbookpro/Applications1/LifelineJavaBackend/src/main/java/com/lifeline/resource/ClientResource.java
 /Users/macbookpro/Applications1/LifelineJavaBackend/src/main/java/com/lifeline/resource/HealthResource.java
 /Users/macbookpro/Applications1/LifelineJavaBackend/src/main/java/com/lifeline/resource/UserResource.java
 /Users/macbookpro/Applications1/LifelineJavaBackend/src/main/java/com/lifeline/service/AlertService.java
+/Users/macbookpro/Applications1/LifelineJavaBackend/src/main/java/com/lifeline/service/ClientProfileService.java
 /Users/macbookpro/Applications1/LifelineJavaBackend/src/main/java/com/lifeline/service/UserService.java
